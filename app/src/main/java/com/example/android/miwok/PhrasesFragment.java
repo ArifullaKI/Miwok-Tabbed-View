@@ -78,7 +78,7 @@ public class PhrasesFragment extends Fragment {
         words.add(new Word("Come here.", "ikkadiki randi", R.raw.phrase_come_here));
 
         WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_phrases);
-        ListView listView = (ListView) getActivity().findViewById(R.id.list);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

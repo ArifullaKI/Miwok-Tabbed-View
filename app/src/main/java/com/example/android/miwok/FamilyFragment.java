@@ -78,7 +78,7 @@ public class FamilyFragment extends Fragment {
         words.add(new Word("daughter", "kumaarthe", R.drawable.family_daughter, R.raw.family_daughter));
 
         WordAdapter adapter = new WordAdapter(getActivity(), words, R.color.category_family);
-        ListView listView = (ListView) getActivity().findViewById(R.id.list);
+        ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
